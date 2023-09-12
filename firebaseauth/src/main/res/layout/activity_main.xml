@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A5A5A5"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="-5dp"
+    tools:layout_editor_absoluteY="-56dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="304dp"
+        android:layout_height="69dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="37dp"
+        android:layout_marginBottom="328dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="300dp"
+        android:layout_height="57dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="240dp"
+        android:layout_marginBottom="37dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="168dp"
+        android:layout_height="55dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.868"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.726" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="174dp"
+        android:layout_height="51dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.722" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="175dp"
+        android:layout_height="55dp"
+        android:background="@color/black"
+        android:text="Register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextEmail"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.845" />
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="175dp"
+        android:layout_height="55dp"
+        android:background="@color/black"
+        android:text="Sign In"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.845" />
+
+    <Button
+        android:id="@+id/verifyButton"
+        android:layout_width="175dp"
+        android:layout_height="55dp"
+        android:background="#3949AB"
+        android:backgroundTint="@color/white"
+        android:enabled="false"
+        android:text="Send Email Verification"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.846" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="347dp"
+        android:layout_height="127dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026"
+        app:srcCompat="@drawable/_560px_firebase_logo_svg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
